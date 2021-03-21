@@ -192,6 +192,45 @@ p {
     margin-left: 50px;
 }
 
+/* What we do -  IMAGE OVERLAY */
+
+.image-box {
+    position: relative;
+    width: 100%;
+    background-color: #bdbdbd;
+    overflow: visible;
+}
+
+.image-box:hover .image-overlay {
+    transform: translatey(0);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+
+    transform: translatey(0%);
+    transition: transform 250ms ease;
+}
+
+.image-overlay>p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 27px 82px;
+
+    color: #FFFFFF;
+}
+
 /* Section */
 
 .section {
@@ -385,6 +424,10 @@ p {
     justify-content: center;
     align-items: center;
     fill: #afb1b8;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-item:not(:last-child) {
@@ -438,6 +481,10 @@ p {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
+
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -499,6 +546,10 @@ p {
     padding: 6px 22px;
     color: #212121;
     background-color: #F5F4FA;
+
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Service */
@@ -534,6 +585,10 @@ p {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+
+    transition-property: background, border, box-sizing, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-footer {
@@ -550,6 +605,44 @@ p {
     box-sizing: border-box;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+/* OVERLAY CARDS */
+
+.box {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+}
+
+.box:hover .overlay {
+    transform: translatey(0);
+}
+
+.serv-list-item:hover .overlay {
+    transform: translatey(0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+}
+
+.overlay>p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+
+    color: #FFFFFF;
+}
+
 
 /* Buttons class */
 
