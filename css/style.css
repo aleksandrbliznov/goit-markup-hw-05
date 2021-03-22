@@ -425,9 +425,8 @@ p {
     align-items: center;
     fill: #afb1b8;
 
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-item:not(:last-child) {
@@ -482,9 +481,8 @@ p {
     border-radius: 4px;
     fill: #AFB1B8;
 
-    transition-property: border, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -547,9 +545,9 @@ p {
     color: #212121;
     background-color: #F5F4FA;
 
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Service */
@@ -586,9 +584,10 @@ p {
     margin-left: 30px;
     margin-top: 30px;
 
-    transition-property: background, border, box-sizing, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-sizing 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-footer {
@@ -626,7 +625,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     
     background: rgba(33, 150, 243, 0.9);
 
@@ -688,6 +687,9 @@ footer {
     color: #212121;
     padding: 10px 0 10px 0;
     text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contact {
@@ -767,7 +769,8 @@ footer {
 .address.link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    ;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FOOTER SOCIAL ICONS */
@@ -830,6 +833,9 @@ footer {
     justify-content: center;
     align-items: center;
     fill: #FFFFFF;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
