@@ -151,6 +151,7 @@ p {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    
     border-radius: 4px;
     padding: 10px 32px;
     text-decoration: none;
@@ -815,10 +816,6 @@ footer {
     
 }
 
-.footer-box {
-    
-  
-}
 
 .footer-box-div:not(:last-child) {
     margin-right: 70px;
@@ -875,6 +872,45 @@ footer {
 .footer-icon {
     width: 20px;
     height: 20px;
+}
+
+/* CONNECT FORM */
+
+.subscribe {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+
+.connect-svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.connect-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+
+    color: #ffffff;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+}
+
+.button-div {
+    display: flex;
 }
 
 /* MODAL WINDOW */
@@ -938,4 +974,42 @@ footer {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     
+}
+
+/* MODAL FORM */
+
+.modal-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    justify-content: center;
+
+    color: #212121;
+}
+
+.modal-form {
+    padding: 40px;
+}
+
+.form-button {
+   width: 200px;
+   height: 50px;
+
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 30px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 0.06em;
+
+   color: #FFFFFF;
+   background: #188CE8;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
 }

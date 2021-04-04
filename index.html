@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button" data-modal-open>
+          <button type="button" class="hero-btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -412,7 +412,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-box-div2">
+        <div class="footer-box-div">
           <h2 class="footer-title">присоединяйтесь</h2>
           <ul class="footer-list">
             <li class="footer-item">
@@ -445,6 +445,20 @@
             </li>
           </ul>
         </div>
+        <div class="connect">
+          <form class="connect-form">
+            <h3 class="subscribe">Подпишитесь на рассылку</h3>
+            <div class="button-div">
+              <input type="text" name="email" placeholder="Email" />
+              <button type="sumbit" class="connect-button">
+                Подписаться
+                <svg class="connect-svg">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -452,6 +466,31 @@
         <button type="button" class="btn-close" data-modal-close>
           <img src="./images/close.png" alt="Закрыть" width="18" />
         </button>
+        <div class="modal-form-div">
+          <form class="modal-form">
+            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+            <label for="phone">Телефон</label>
+            <input type="tel" name="tel" id="phone" />
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" />
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="8"
+              placeholder="Введите текст"
+            ></textarea>
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="#">Условия договора</a></label
+            >
+            <button type="submit" class="form-button">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
